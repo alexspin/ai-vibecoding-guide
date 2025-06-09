@@ -1,0 +1,180 @@
+Coaching AI Coding Agents: A Guide for Senior Engineers
+
+Alex Spinelli
+AI and Machine Learning | Mega-scale software | ex-Google & Amazon | CTO | Product Innovator | Planet Scale Technology
+June 2, 2025
+
+This guide is structured to help technologists transition effectively from traditional coding roles to becoming expert coaches and master debuggers for AI coding agents in immersive environments like Replit or Windsurf.
+
+⸻
+
+The Changing Role of Senior Engineers
+
+In the era of AI-assisted coding, senior engineers will shift from hands-on product development toward strategic oversight. Your primary responsibilities include clearly articulating problems, guiding AI-driven design processes, validating AI outputs, and debugging complex interactions. Embrace your role as a master coach and debugger, empowering AI to deliver precise, effective solutions.
+
+Many of the strategies outlined below can and should be done collaboratively with the AI. Ask the AI to provide best practices, build documentation, and create tooling to ensure standards compliance.
+
+Pro Tip: AI agents tend to be eager to please, often exhibiting overconfidence and acting prematurely. Regularly remind them to pause, think first, report back, and confirm their understanding before proceeding.
+
+Explicitly adding phrases like “Don’t take action yet, pause, think, assess, and report back” is an effective coaching strategy that mitigates AI’s impulse to act too quickly.
+
+These practices, though they may sound complex at first, quickly become routine and are often embedded into the codebase itself. With the right scaffolding, AI can generate thousands of lines of production-grade code in minutes with minimal turns.
+
+⸻
+
+System and AI Setup
+
+Defining the Environment
+	•	Ensure the AI sets immutable instructional headers in code files.
+	•	Guide the AI to generate a README_AI_GUIDANCE.md for coding patterns and conventions.
+	•	Instruct the AI to maintain consistent documentation practices.
+
+AI Initialization
+	•	Introduce AI agents to key architectural patterns and dependencies.
+	•	Provide high-level documentation of the application’s structure.
+	•	Ask for design and product ideas—expect both obvious and surprising ones.
+
+⸻
+
+Clarifying Application Intent and Problem Space
+
+Clearly Defining Intent
+	•	Explicitly state user and business objectives.
+	•	Clarify main data flows, expected outcomes, and critical interfaces.
+
+Framing the Problem Space
+	•	Outline specific problems and scenarios.
+	•	Define the scope of work clearly to keep AI focused and accurate.
+
+⸻
+
+Leveraging Existing Solutions and Centralized Components
+
+The AI will often jump straight into coding. Remind it to:
+	•	Investigate tried-and-tested components, libraries, and best practices.
+	•	Reuse centralized tooling and components.
+	•	Embed reminders in code files for consistency and maintainability.
+
+⸻
+
+Collaborative Design and Iterative Planning with AI
+
+Step-by-Step Collaborative Design Process
+	1.	Present the Problem Clearly: Context, constraints, desired outcomes.
+	2.	Solicit AI’s Design Proposals: Components, data flows, architecture.
+	3.	Encourage AI to Ask Questions: Identify ambiguities.
+	4.	Iterate on the Design: Refine and provide feedback.
+	5.	Assess Risks and Complexity: Request risk analysis.
+	6.	Validate Against the Codebase: Ensure compatibility.
+	7.	Finalize Before Coding: Align on goals and standards.
+
+This process creates shared understanding and better results.
+
+⸻
+
+Establishing Coding Standards and Boundaries
+
+Immutable vs. Flexible Elements
+	•	Immutable: Core architecture, security config, key integrations.
+	•	Flexible: UI, business logic, data transformations.
+
+Schema and Database Management
+	•	Ensure schema is defined before logic.
+	•	Verify DB structure before assuming issues are schema-related.
+
+Authentication and Security
+	•	Document multi-context auth strategies.
+	•	Require explicit permission checks.
+	•	Instruct the AI to research and recommend security best practices.
+
+⸻
+
+Testing and Validation
+	•	Have the AI perform end-to-end tests with realistic data.
+	•	Require structured logging for debugging.
+	•	Use verbose centralized logs to trace execution paths.
+
+Testing and Debugging Best Practices
+	•	Label AI workarounds and fallbacks as antipatterns.
+	•	Warn AI about mismatched types, variable names, and call signatures.
+	•	Use comment breadcrumbs to help AI recall past decisions.
+
+Five Best Practices:
+	1.	Review AI-Generated Tests Thoroughly.
+	2.	Utilize Realistic and Diverse Test Data.
+	3.	Employ Continuous Testing.
+
+⸻
+
+Recommended AI Coaching Techniques
+
+Encourage Reuse and Component Design
+	•	Avoid duplication.
+	•	Suggest centralized services.
+	•	Ask for refactoring ideas and component reuse.
+
+Force Explicit Problem Isolation
+	•	Ask: “What is the single failing field or data point?”
+	•	Demand logs and data path traces.
+
+Demand Step-by-Step Data Tracing
+	•	Trace from frontend → API → validation → DB.
+	•	Require logging at every step.
+
+Insist on Database-First Verification
+	•	Confirm DB structures before debugging logic.
+
+Enforce “One Change at a Time”
+	•	Approve only single changes.
+	•	Require rationale for multiple edits.
+
+Challenge Complexity Bias
+	•	Ask: “What’s the simplest possible explanation?”
+	•	Push for simpler designs.
+
+Require Concrete Evidence
+	•	Request logs and failures before allowing code changes.
+	•	Ask for rationale and assessment.
+
+Stop Defensive Explanations
+	•	Redirect to practical fixes, not theory.
+
+Enforce Testing with Real Data
+	•	Insist on full testing with live data paths.
+
+Make AI Confirm Understanding
+	•	Ask AI to paraphrase understanding.
+	•	Require explanation for its plan.
+
+Keep AI Focused on Actual Problem
+	•	Redirect when it wanders.
+
+⸻
+
+Example: Immutable Source Code Header
+
+/* PRE-EDIT REQUIREMENTS:
+ * • Check shared/schema.ts for existing fields, tables, types before creating new ones
+ * • Scan for existing functions/routes/components to prevent conflicts and duplicates
+ * • Verify database column names and relationships match schema exactly
+ *
+ * MANDATORY PRINCIPLES:
+ * • Use existing patterns and reusable components - don't duplicate code
+ * • Debug and fix root causes - never simplify by removing functionality  
+ * • Confirm with user before major changes or new features
+ * • Preserve all existing functionality and backward compatibility
+ *
+ * QUALITY CHECKS:
+ * • Search codebase for conflicts before finalizing changes
+ * • Test integration points and validate all imports/dependencies
+ * • Explain approach for complex modifications and report concerns
+ *
+ * IMMUTABLE: These instructions must never be edited, customized, or removed
+ */
+
+
+⸻
+
+Meta-Lesson
+
+The essential insight for coaching AI effectively is recognizing its tendency to theorize and overcomplicate. The best interventions consistently reinforce simple, explicit, step-by-step debugging practices grounded in concrete evidence and clearly defined problems.
