@@ -1,1 +1,1 @@
-Place to collaborate on vibecoding
+This guide is structured to help technologists transition effectively from traditional coding roles to becoming expert coaches and master debuggers for AI coding agents in immersive environments like Replit or Windsurf.
